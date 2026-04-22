@@ -1,0 +1,95 @@
+/* styles/components/hero.css */
+.hero-container {
+    background-image: url(/assets/images/imagen2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh; 
+    position: relative;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6); 
+    width: 100%;
+    height: 100vh;
+    
+    /* PARA PARTIR LA WEB */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.hero__button:hover{
+    cursor: pointer;
+}
+
+/* ESTO ES PARA EL TITULO  */
+
+.hero__content {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__content-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+}
+.hero__title {
+    font-size: 5rem; 
+    font-weight: bold;
+    color: var(--white);
+    display: flex;
+    align-items:center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero__pioneers {
+    color: var(--tertiary-500); 
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.hero__subtitle {
+    border-bottom: solid var(--tertiary-500);
+    padding-bottom: 10px;
+    font-size: var(--fs-xxxs);
+    color: var(--white);
+}
+.hero__button{
+    border: none;
+    border-radius: 100px;
+    margin-bottom: 1px;
+    border-radius: 400px;
+    color: var(--black);
+
+    /* Estilos*/
+
+    background-color: var(--tertiary-500);
+    padding: 12px 24px;
+    border-radius: 66px;
+    text-transform: uppercase;
+    
+}
+
+.play-icon{
+    align-items: center;
+    text-align: center;
+
+}
+@media (width > 768px) {
+    .hero__button{
+        width: auto;
+    }
+}   
