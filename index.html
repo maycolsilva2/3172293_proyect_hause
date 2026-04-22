@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="/styles/variables.css">
     <link rel="stylesheet" href="/styles/components/navbar.css">
     <link rel="stylesheet" href="/styles/components/hero.css">
+    <link rel="stylesheet" href="/styles/components/main.css">
+    <link rel="stylesheet" href="/styles/components/cards.css">
+
+     <script type="module">
+        import {loadCards} from "/js/components/cards.js";
+        loadCards(".cards-container"); //Sin IDs muestra todas las cards
+    </script>
+
 </head>
 <body>
 
     
     <div class="navbar-container"></div>
     <div class="hero-container"></div>
+    <div class="main-container"></div>
+    <div class="cards-container"></div>
     
     
 </body>
 <script src="/js/components/navbar.js"></script>
 <script src="/js/components/hero.js"></script>
+<script src="/js/components/main.js"></script>
 </html>
